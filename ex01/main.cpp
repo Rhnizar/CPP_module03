@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 10:33:20 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/22 13:48:01 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/22 12:39:43 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 int main(void)
 {
-    ClapTrap r;
+    ClapTrap r("rr", 10, 10, 0);
 
+    std::cout << r.getName() << std::endl;
     r.attack("me");
+    return 0;
 }

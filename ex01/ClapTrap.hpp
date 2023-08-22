@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 10:34:13 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/22 13:45:42 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/22 12:31:15 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ class   ClapTrap{
         void    setAttack_damege(int ad);
         
         ClapTrap();//default constractor
-        ClapTrap(std::string name);// normal constractor
+        ClapTrap(std::string name, int hp=10, int ep=10, int ad=0);// constractor useless or usefull i don't know
         ClapTrap(const ClapTrap& other_claptrap);//copy constractor
         ClapTrap& operator=(const ClapTrap& other_claptrap);//copy assignement operator overloading
         ~ClapTrap();//destractor

@@ -6,22 +6,24 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 10:38:16 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/22 13:46:54 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/22 12:28:29 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-
-ClapTrap::ClapTrap() : name("reda"), hit_point(10), energy_point(10), attack_damage(0)
+ClapTrap::ClapTrap()
 {
-	std::cout << "default constractor called !" << std::endl;
+    std::cout << "default constractor called !" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string namee)
+ClapTrap::ClapTrap(std::string namee, int hp, int ep, int ad)
 {
     std::cout << "constractor called !" << std::endl;
     name = namee;
+    hit_point = hp;
+    energy_point = ep;
+    attack_damage = ad;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& other_claptrap)
