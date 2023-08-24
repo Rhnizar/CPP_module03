@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 10:33:20 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/22 13:48:01 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/24 13:08:10 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,13 @@
 
 int main(void)
 {
-    ClapTrap r;
+    ClapTrap r1;
+     ClapTrap r2("ClapTrap2");
 
-    r.attack("me");
+    r1.attack("ClapTrap2");
+    r1.takeDamage(5);
+    r1.attack("ClapTrap2");
+    r1.takeDamage(4);
+    r1.beRepaired(5);
+    r1.attack("ClapTrap2");
 }
