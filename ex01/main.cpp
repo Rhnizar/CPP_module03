@@ -6,17 +6,17 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 10:33:20 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/22 12:39:43 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/24 13:47:03 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main(void)
 {
-    ClapTrap r("rr", 10, 10, 0);
+    ScavTrap r;
 
-    std::cout << r.getName() << std::endl;
-    r.attack("me");
-    return 0;
+	ScavTrap r2 = ScavTrap("cl1");
+	r.attack(r2.getName());
+	return 0;
 }
