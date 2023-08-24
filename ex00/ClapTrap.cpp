@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 10:38:16 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/24 13:09:31 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/24 13:14:37 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,46 +48,6 @@ ClapTrap::~ClapTrap()
     // std::cout << "destractor called !" << std::endl;
 }
 
-std::string ClapTrap::getName()
-{
-    return name;
-}
-
-void    ClapTrap::setName(std::string namee)
-{
-    name = namee;
-}
-
-int     ClapTrap::getHit_point()
-{
-    return hit_point;
-}
-
-void    ClapTrap::setHit_point(int hp)
-{
-    hit_point = hp;
-}
-
-int     ClapTrap::getEnergy_point()
-{
-    return energy_point;
-}
-
-void    ClapTrap::setEnergy_point(int ep)
-{
-    energy_point = ep;
-}
-
-int     ClapTrap::getAttack_damage()
-{
-    return attack_damage;
-}
-
-void    ClapTrap::setAttack_damege(int ad)
-{
-    attack_damage = ad;
-}
-
 /*implement the functions attack && takeDamaeg && beRepaired */
 
 void ClapTrap::attack(const std::string& target)
@@ -118,7 +78,7 @@ void ClapTrap::beRepaired(unsigned int amount)
     {
         hit_point += amount;
         energy_point--;
-        std::cout <<" ClapTrap " << name << "  repairs itself with " << amount << " point of damage and the current hit point is " << hit_point << std::endl;
+        std::cout <<" ClapTrap " << name << " repairs itself with " << amount << " point of damage and the current hit point is " << hit_point << std::endl;
     }
     else
         std::cout <<" ClapTrap " << name << " dosen't have enough energy point to beRepaired !" << std::endl;
