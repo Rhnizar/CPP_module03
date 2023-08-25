@@ -6,13 +6,13 @@
 #    By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/22 10:28:35 by rrhnizar          #+#    #+#              #
-#    Updated: 2023/08/22 11:09:17 by rrhnizar         ###   ########.fr        #
+#    Updated: 2023/08/25 10:33:54 by rrhnizar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 Name = exec
 
-SRC = main.cpp ClapTrap.cpp
+SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

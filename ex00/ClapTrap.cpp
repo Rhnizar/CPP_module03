@@ -6,33 +6,32 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 10:38:16 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/24 13:14:37 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/25 15:49:23 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-
 ClapTrap::ClapTrap() : name("reda"), hit_point(10), energy_point(10), attack_damage(0)
 {
-	// std::cout << "default constractor called !" << std::endl;
+	std::cout << "default constractor called !" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string namee)
+ClapTrap::ClapTrap(std::string namee) : hit_point(10), energy_point(10), attack_damage(0)
 {
-    // std::cout << "constractor called !" << std::endl;
+    std::cout << "constractor called !" << std::endl;
     name = namee;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& other_claptrap)
 {
-    // std::cout << "copy constractor called !" << std::endl;
+    std::cout << "copy constractor called !" << std::endl;
     *this = other_claptrap;
 }
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& other_claptrap)
 {
-    // std::cout << "copy assignement operator overloading called !" << std::endl;
+    std::cout << "copy assignement operator overloading called !" << std::endl;
     if (this != &other_claptrap)
     {
         name = other_claptrap.name;
@@ -45,7 +44,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other_claptrap)
 
 ClapTrap::~ClapTrap()
 {
-    // std::cout << "destractor called !" << std::endl;
+    std::cout << "destractor called !" << std::endl;
 }
 
 /*implement the functions attack && takeDamaeg && beRepaired */

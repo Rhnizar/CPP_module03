@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 10:34:13 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/24 13:25:15 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/25 15:47:09 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,12 @@
 #include <iostream>
 
 class   ClapTrap{
-    private:
+    protected:
         std::string name;
         int         hit_point;
         int         energy_point;
         int         attack_damage;
     public:
-
-        std::string getName();
         
         ClapTrap();//default constractor
         ClapTrap(std::string name);// normal constractor
