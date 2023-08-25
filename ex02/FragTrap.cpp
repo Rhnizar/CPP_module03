@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 15:59:20 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/25 16:10:40 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/25 17:24:28 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,16 @@ FragTrap::FragTrap() : ClapTrap()
     std::cout << "FragTrap : default constractor called !" << std::endl;
     name = "reda";
     hit_point = 100;
-    energy_point = 50;
-    attack_damage = 20;
+    energy_point = 100;
+    attack_damage = 30;
 }
 
 FragTrap::FragTrap(std::string namee) : ClapTrap(namee)
 {
     std::cout << "FragTrap : constractor called !" << std::endl;
     hit_point = 100;
-    energy_point = 50;
-    attack_damage = 20;
+    energy_point = 100;
+    attack_damage = 30;
     name = namee;
 }
 
