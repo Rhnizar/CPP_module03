@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 12:42:22 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/26 14:02:48 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/26 20:43:59 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ class ScavTrap : virtual public ClapTrap
         ScavTrap& operator=(const ScavTrap& other_scavTrap);//copy assignement operator overloading
         ~ScavTrap();//destractor
 
-		int	getEnegyPoint();
 		void attack(const std::string& target);
         void guardGate();
 };

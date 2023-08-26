@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 12:43:17 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/26 18:46:07 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/26 20:44:13 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ ScavTrap::ScavTrap(std::string namee) : ClapTrap(namee)
     hit_point = 100;
     energy_point = 50;
     attack_damage = 20;
-    // name = namee;
 }
 
 ScavTrap::ScavTrap(const ScavTrap& other_scavTrap) : ClapTrap(other_scavTrap)
@@ -54,10 +53,6 @@ ScavTrap::~ScavTrap()
     std::cout << "ScavTrap : destractor called !" << std::endl;
 }
 
-int	ScavTrap::getEnegyPoint()
-{
-    return energy_point;
-}
 /*implement the functions attack && guardGate */
 
 void ScavTrap::attack(const std::string& target)
