@@ -6,13 +6,13 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 10:38:16 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/25 17:24:10 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/26 18:25:14 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
-ClapTrap::ClapTrap() : name("reda"), hit_point(10), energy_point(10), attack_damage(0)
+ClapTrap::ClapTrap() : name("reda_clap_name"), hit_point(10), energy_point(10), attack_damage(0)
 {
 	std::cout << "ClapTrap : default constractor called !" << std::endl;
 }
@@ -20,7 +20,7 @@ ClapTrap::ClapTrap() : name("reda"), hit_point(10), energy_point(10), attack_dam
 ClapTrap::ClapTrap(std::string namee) : hit_point(10), energy_point(10), attack_damage(0)
 {
     std::cout << "ClapTrap : constractor called !" << std::endl;
-    name = namee;
+    name = namee + "_clap_name";
 }
 
 ClapTrap::ClapTrap(const ClapTrap& other_claptrap)

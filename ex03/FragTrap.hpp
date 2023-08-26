@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 15:59:26 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/25 20:47:11 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/26 14:02:39 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "ClapTrap.hpp"
 
-class FragTrap : public ClapTrap
+class FragTrap : virtual public ClapTrap
 {
 	public:
 		FragTrap();//default constractor
@@ -24,7 +24,8 @@ class FragTrap : public ClapTrap
         FragTrap& operator=(const FragTrap& other_fragtrap);//copy assignement operator overloading
         ~FragTrap();//destractor
 
-		int	getAttackDamage();
+		int getFragTrapHitPoint();
+		int getFragTrapAttackDamage();
 		void attack(const std::string& target);
 		void highFivesGuys(void);
 };

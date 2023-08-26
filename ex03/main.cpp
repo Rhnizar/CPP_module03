@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 10:33:20 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/25 18:13:18 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/26 19:24:52 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 
 int main(void)
 {
-	DiamondTrap dt("rr");
+	DiamondTrap dt("test");
+	dt.setName("rida");
+	// dt.setName("aaa");
+	// dt.attack();
+	// dt.whoAmI();
+	std::cout << dt.get_energypoint() << std::endl;
+	dt.whoAmI();
 	return 0;
 }
