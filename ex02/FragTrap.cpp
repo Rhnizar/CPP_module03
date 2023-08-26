@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 15:59:20 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/08/25 17:24:28 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/08/26 20:50:02 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ FragTrap::FragTrap(std::string namee) : ClapTrap(namee)
     hit_point = 100;
     energy_point = 100;
     attack_damage = 30;
-    name = namee;
 }
 
 FragTrap::FragTrap(const FragTrap& other_FragTrap) : ClapTrap(other_FragTrap)
@@ -54,7 +53,7 @@ FragTrap::~FragTrap()
     std::cout << "FragTrap : destractor called !" << std::endl;
 }
 
-/*implement the functions attack && guardGate */
+/*implement the functions attack && highFivesGuys */
 
 void FragTrap::attack(const std::string& target)
 {
